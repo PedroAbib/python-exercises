@@ -1,0 +1,23 @@
+MANIPULANDO TEXTO
+
+Análise:-------------------
+len()
+count()
+find()
+in
+
+Transformação:---------------
+replace()
+upper()
+lower()
+capitalize()
+title()
+strip()
+rstrip()
+lstrip()
+
+Divisão:-------------------
+split()
+
+Junção:--------------------
+join()

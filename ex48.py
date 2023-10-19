@@ -3,8 +3,10 @@
 
 soma = 0
 
-for multiplos_3 in range(1, 500+1):
+for multiplos_3 in range(1, 501):
     if multiplos_3 % 3 == 0 and multiplos_3 % 2 != 0:
         soma += multiplos_3
 
 print(f"A soma é {soma}")
+
+# O código "multiplos_3 % 2 != 0" pode ser substituído por um "2" no final de range, para optimizar o código!

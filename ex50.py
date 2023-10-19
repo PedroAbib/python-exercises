@@ -3,7 +3,7 @@
 
 soma = 0
 
-for numeros in range(1, 6+1):
+for numeros in range(1, 7):
     n = int(input("Digite um número inteiro: "))
     if n % 2 == 0:
         soma += n

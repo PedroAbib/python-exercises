@@ -7,8 +7,8 @@ maiores = 0
 menores = 0
 atual = date.today().year
 
-for idades in range(1, 7 +1):
-    nascimento = int(input("Ano de nascimento: "))
+for idades in range(1, 8):
+    nascimento = int(input(f"Ano de nascimento {idades}: "))
     nascimento = atual - nascimento
     if nascimento < 21:
         menores += 1

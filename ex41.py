@@ -5,10 +5,13 @@
 # Até 19 anos: JUNIOR
 # Até 20 anos: SÊNIOR
 # Acima: MASTER
+from datetime import date
 
 nascimento = int(input("Ano de nascimento: "))
 
-idade = 2023 - nascimento
+atual = date.today().year
+
+idade = atual - nascimento
 
 if idade <= 9:
     print("Categoria: Mirim")

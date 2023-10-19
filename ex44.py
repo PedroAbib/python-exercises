@@ -12,7 +12,7 @@ avista_dinheiro = produto - (produto * 10/100)
 
 avista_cartao = produto - (produto * 5/100)
 
-cartao_3xmais = produto + (produto * 20/100)
+parcelas = None
 
 if pagamento == 1:
     print("O produto no valor de R${:.2f} terá um desconto de 10%, valendo R${:.2f}".format(produto, avista_dinheiro))
@@ -24,7 +24,13 @@ elif pagamento == 3:
     print("O produto vale R${:.2f}".format(produto))
 
 elif pagamento == 4:
-    print("O produto no valor de R${:.2f} sofrerá juros de 20%, valendo R${:.2f}".format(produto, cartao_3xmais))
+    parcelas = int(input("Em quantas parcelas? "))
+    cartao_3xmais = (produto + (produto * 20/100)) / parcelas
+    if parcelas >= 3:
+        print("O produto no valor de R${:.2f} sofrerá juros de 20%, valendo {}x de R${:.2f}, totalizando R${:.2f}".format(produto, parcelas, cartao_3xmais, (parcelas * cartao_3xmais)))
+
+    else:
+        print("O mínimo de parcelas é 3 ou mais.")
 
 else:
     print("O número não corresponde a uma das opções.")

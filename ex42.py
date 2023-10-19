@@ -12,7 +12,7 @@ if lado1 + lado2 > lado3 and lado1 + lado3 > lado2 and lado2 + lado3 > lado1:
         print("O triângulo é Equilátero.")
     elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
         print("O triângulo é Isósceles.")
-    elif lado1 != lado2 != lado3:
+    else:
         print("O triângulo é Escaleno.")
 
 else:

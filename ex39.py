@@ -6,8 +6,6 @@
 
 idade = int(input("Idade: "))
 
-plural_anos = 18 - idade 
-
 if idade < 18:
     print("Faltam {} anos para se alistar ao serviço militar.".format(18 - idade))
 

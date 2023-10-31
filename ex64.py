@@ -5,9 +5,9 @@
 n = 0
 quant_numeros = 0
 soma_numeros = 0
-
+n = int(input("Digite um número: "))
 while n != 999:
-    n = int(input("Digite um número: "))
     soma_numeros += n
     quant_numeros += 1
+    n = int(input("Digite um número: "))
 print(f"Foram digitados um total de {quant_numeros} números, que somados dão {soma_numeros}.")

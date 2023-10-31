@@ -6,9 +6,8 @@ maior = None
 menor = None
 quant = 0
 soma = 0
-continua = 1
 
-while continua == 1:
+while True:
     n = float(input("Digite um número: "))
     soma += n
     quant += 1
@@ -21,6 +20,6 @@ while continua == 1:
         menor = n
     pergunta = input("Deseja continuar[S/N]? ").upper()
     if "N" in pergunta:
-        continua = 0
+        break
 print(f"A média entre todos os valores é igual a {soma / quant}.")
 print(f"O maior valor digitado foi {maior}, e o menor foi {menor}.")

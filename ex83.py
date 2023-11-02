@@ -11,7 +11,7 @@ if "(" in expressao or ")" in expressao:
                 if "(" in expressao[a] and ")" in expressao[a:]:
                     valido = True
 
-    if valido: # Como válido é booleano, não preciso indicar se é == True ou False
+    if valido: # Como "valido" é booleano, não preciso indicar se é == True ou False
         print("Expressão válida.")
     else:
         print("Expressão inválida.")

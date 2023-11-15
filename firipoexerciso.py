@@ -43,6 +43,7 @@ while True:
 
     elif operacao == "3":
         editar = input("Digite o ID da transferência e o novo preço(separado por traços): ").split('-')
+        editar[1] = float(editar[1])
         if editar[0] in transferencias:
             transferencias[editar[0]][1] = editar[1]
         else:
